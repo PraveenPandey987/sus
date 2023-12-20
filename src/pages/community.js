@@ -5,7 +5,7 @@ import a1 from "./1.png";
 import a2 from "./2.png";
 import a3 from "./3.png";
 import a4 from "./4.png";
-import h from "./home.svg"
+import h from "./home.svg";
 import {
   BrowserRouter as BrowserRouter1,
   HashRouter as HashRouter2,
@@ -13,6 +13,33 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+const people = [
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  // More people...
+];
 const Community = () => {
   return (
     <div className="all">
@@ -33,11 +60,11 @@ const Community = () => {
               <img src={a2} width={60} height={40} alt="" />
             </a>
 
-            <a href="/community/blogs">
+            <a href="/community/discussions">
               <img src={a3} width={60} height={40} alt="" />
             </a>
 
-            <a href="#">
+            <a href="/community/blogs">
               <img src={a4} width={60} height={40} alt="" />
             </a>
 
@@ -49,7 +76,10 @@ const Community = () => {
             </a> */}
           </nav>
 
-          <div className="flex flex-col items-center space-y-6" style={{marginTop : "23px"}}>
+          <div
+            className="flex flex-col items-center space-y-6"
+            style={{ marginTop: "23px" }}
+          >
             {/* <a
               href="#"
               className="rounded-lg bg-gray-100 p-1.5 text-gray-700 transition-colors duration-200 focus:outline-none"
@@ -67,128 +97,74 @@ const Community = () => {
           </div>
         </aside>
       </div>
-      <div className="p1">
+      <div className="p1" style={{width : "100%" , border : "none"}}>
         {/* <Blog/> */}
-        <section class="vh-100 gradient-custom">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-xl-10">
-        <div class="card">
-          <div class="card-body py-5">
-
-           
-            <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
-              
-              <div class="carousel-indicators mb-0">
-                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
-                  aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
-                  aria-label="Slide 1"></button>
-              </div>
-
-              
-              <div class="carousel-inner pt-2 pb-5">
-               
-                <div class="carousel-item active">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 col-lg-9 col-xl-8">
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
-                            height="90" />
-                        </div>
-                        <div class="flex-grow-1 ms-4 ps-3">
-                          <figure>
-                            <blockquote class="blockquote mb-4">
-                              <p>
-                                <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
-                                <span class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing
-                                  elit. Pariatur sint nesciunt ad itaque aperiam expedita officiis incidunt
-                                  minus facere, molestias quisquam impedit inventore.</span>
-                              </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                              Miranda Smith in <cite title="Source Title">The Guardian</cite>
-                            </figcaption>
-                          </figure>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                
-                <div class="carousel-item">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 col-lg-9 col-xl-8">
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
-                            height="90" />
-                        </div>
-                        <div class="flex-grow-1 ms-4 ps-3">
-                          <figure>
-                            <blockquote class="blockquote mb-4">
-                              <p>
-                                <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
-                                <span class="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
-                                  voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                  quae ab illo inventore veritatis.</span>
-                              </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                              Annie Hall <cite title="Source Title">New York Times</cite>
-                            </figcaption>
-                          </figure>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 col-lg-9 col-xl-8">
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
-                            height="90" />
-                        </div>
-                        <div class="flex-grow-1 ms-4 ps-3">
-                          <figure>
-                            <blockquote class="blockquote mb-4">
-                              <p>
-                                <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
-                                <span class="font-italic">At vero eos et accusamus et iusto odio dignissimos
-                                  qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                  et quas molestias excepturi sint amet dolore.</span>
-                              </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                              Jason More in <cite title="Source Title">Smash Magazine</cite>
-                            </figcaption>
-                          </figure>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="bg-white py-24 sm:py-32" style={{paddingTop : "1rem" , paddingLeft : "8rem"}}>
+        <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Meet our users
+              </h2>
+              <p className="mt-10 text-lg leading-8 text-gray-600">
+                Where voices harmonize and differences unite, our community
+                thrives in shared purpose, weaving a tapestry of support,
+                belonging, and boundless possibilities.
+              </p>
             </div>
-
+          <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+            
+            <ul
+              role="list"
+              className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+              }}
+            >
+              
+              {people.map((person) => (
+                <div
+                  className="mentors p-4 ml-10 border-2 border-gray-200 rounded-lg"
+                  key={person.name}
+                  style={{ width: "600px", height: "400px" }}
+                >
+                  <li>
+                    <div className="flex items-center gap-x-6">
+                      <img
+                        className="h-16 w-16 rounded-full"
+                        src={person.imageUrl}
+                        alt=""
+                      />
+                      <div>
+                        <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                          {person.name}
+                        </h3>
+                        <p className="text-sm font-semibold leading-6 text-indigo-600">
+                          {person.role}
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <p className="p-3">
+                    🚀 Exciting news! Our team at [Company XYZ] just launched a
+                    groundbreaking product aimed at revolutionizing how we
+                    approach [industry/sector]. 🌟 We're thrilled to introduce
+                    [Product Name], designed to streamline processes and enhance
+                    user experiences. With its innovative features, we're
+                    confident it'll redefine standards in the [industry]. 👉
+                    Want to learn more? Dive deeper into the details in our
+                    latest blog post: [Link to Blog Post] Join us in this
+                    journey towards innovation! Share your thoughts in the
+                    comments below. #Innovation #ProductLaunch #CompanyXYZ
+                  </p>
+                </div>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-      </div>
-      <div className="p2">
+
+      {/* <div className="p2">
         <div className="news">
           <h2>Trending Discussions</h2>
           <div
@@ -282,7 +258,7 @@ const Community = () => {
         </div>
         <hr />
         <div className="news2"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

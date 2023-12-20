@@ -1,3 +1,34 @@
+// import './App.css'
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Layout from './pages/layout';
+// import Rout from './routes'; // Import the route configuration
+
+// export default function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         {/* Define your routes here */}
+//         {Rout.map((route, index) => (
+//           <Route
+//             key={index}
+//             path={route.path}
+//             element={route.element}
+//           >
+//             {/* Nested routes */}
+//             {route.children && route.children.map((childRoute, childIndex) => (
+//               <Route
+//                 key={childIndex}
+//                 path={childRoute.path}
+//                 element={childRoute.element}
+//               />
+//             ))}
+//           </Route>
+//         ))}
+//       </Routes>
+//     </Router>
+//   );
+// }
 import './App.css'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Contest from "./pages/contest"
@@ -8,6 +39,11 @@ import About from './pages/about'
 import Services from './pages/services'
 import Community from './pages/community'
 import Blog from './pages/comm_blog'
+import Registration from './pages/registration'
+import Trash from './pages/trash'
+import Sign from './sign'
+ import CommonDiscussion from './pages/com_discussion'
+import Read from './pages/read'
 
 export default function Example() {
 
@@ -28,7 +64,6 @@ export default function Example() {
 
 <Navbar />
 
-
       <Router>
        
         <Routes>
@@ -40,7 +75,12 @@ export default function Example() {
           <Route exact path="/community" element={<Community />} />
           <Route exact path="/community/blogs" element={<Blog/>} />
           <Route path="*" element={<NotFound />} />
-          
+          <Route path="/registration" element={<Registration/>} />
+          <Route path="/sign" element={<Sign/>}/>
+          <Route path="/trash" element={<Trash/>}/>
+          <Route path="/read"  element={<Read/>} />
+          <Route path ="/trash" element={<Trash/>} />
+           <Route path ="/community/discussions" element={<CommonDiscussion/>} /> 
         </Routes>
       </Router>
 

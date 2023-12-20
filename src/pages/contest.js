@@ -9,41 +9,8 @@ const Contest = () => {
         style={{ width: "100%" }}
       />
       <div className="main">
-        <div className="reg_details"></div>
-        <div className="reg" id="xyz">
-          <div class="wrapper" style={{ backgroundColor: "#ffd673" }}>
-            <div class="logo">
-              <img
-                src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"
-                alt=""
-              />
-            </div>
-            <div class="text-center mt-4 name">Twitter</div>
-            <form class="p-3 mt-3">
-              <div class="form-field d-flex align-items-center">
-                <span class="far fa-user"></span>
-                <input
-                  type="text"
-                  name="userName"
-                  id="userName"
-                  placeholder="Username"
-                />
-              </div>
-              <div class="form-field d-flex align-items-center">
-                <span class="fas fa-key"></span>
-                <input
-                  type="password"
-                  name="password"
-                  id="pwd"
-                  placeholder="Password"
-                />
-              </div>
-              <button class="btn mt-3" style={{ backgroundColor: "#ff693d" }}>
-                Register Now
-              </button>
-            </form>
-          </div>
-        </div>
+        
+       
       </div>
       <div class="mx-auto max-w-7xl px-2 lg:px-8">
         <div class="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
@@ -153,7 +120,7 @@ const Contest = () => {
           <main>
             <div id="header">
               <h2>
-                <b>Previous Winners</b>
+                <b className='m-10'>Previous Winners</b>
               </h2>
             </div>
             <div id="leaderboard">

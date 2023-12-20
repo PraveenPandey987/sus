@@ -28,11 +28,11 @@ const Community = () => {
               <img src={a2} width={60} height={40} alt="" />
             </a>
 
-            <a href="/community/blogs">
+            <a href="/community/discussions">
               <img src={a3} width={60} height={40} alt="" />
             </a>
 
-            <a href="#">
+            <a href="/community/blogs">
               <img src={a4} width={60} height={40} alt="" />
             </a>
 
@@ -65,7 +65,7 @@ const Community = () => {
       <div className="p1">
         <Blog/>
       </div>
-      <div className="p2">
+      {/* <div className="p2">
         <div className="news">
           <h2>Trending Discussions</h2>
           <div
@@ -159,7 +159,7 @@ const Community = () => {
         </div>
         <hr />
         <div className="news2"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

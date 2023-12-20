@@ -2,7 +2,6 @@ import { Component, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Cards from '../components/Cards'
-import Registration from './registration'
 import Contest from "./contest"
 
 
@@ -11,7 +10,7 @@ export default function Example() {
 
   return (
     <>
-   <Registration/>
+  
     <div className="bg-white">
      
 
@@ -30,21 +29,16 @@ export default function Example() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+           
+            
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+            Discover the Art of Wellness
+
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+            Embark on a journey where ancient wisdom meets modern solutions. Ayush Bharat is more than just a program; it's a revolution towards a healthier India. Explore the realms of holistic wellness and embrace the essence of well-being.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -53,7 +47,7 @@ export default function Example() {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="./about" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -79,18 +73,110 @@ export default function Example() {
     justifyContent: 'space-evenly',
     
 }}>
-<Cards  src="https://images.unsplash.com/photo-1682687981715-fa2ff72bd87d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-text="Your virtual guide to startup funding. A startup might require funding for one, a few, or all of the following purposes. Click to know more "
-head="hello"/>
-<Cards  src="https://images.unsplash.com/photo-1682687981715-fa2ff72bd87d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-text="Your virtual guide to startup funding. A startup might require funding for one, a few, or all of the following purposes. Click to know more"
-head="hello"/>
-<Cards  src="https://images.unsplash.com/photo-1682687981715-fa2ff72bd87d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-text="Your virtual guide to startup funding. A startup might require funding for one, a few, or all of the following purposes. Click to know more"
-head="hello"/>
+
 </div>
-
-
+<div class="mx-auto max-w-7xl px-2 lg:px-8">
+        <div class="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
+            <a href="/community"><svg
+                class="h-9 w-9 text-red-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                ></path>
+              </svg></a>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">
+              Community
+            </h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
+            <svg
+                class="h-9 w-9 text-red-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">
+              Authenticate
+            </h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
+            <svg
+                class="h-9 w-9 text-red-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">
+              Collab
+            </h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
+              <a href="/about"><svg
+                class="h-9 w-9 text-red-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                ></path>
+              </svg></a>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">About</h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </div>
 
 
 

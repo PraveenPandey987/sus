@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Blog from './mentors'
 const services = () => {
   return (
-    <div>services</div>
+    <>
+    <Blog/></>
   )
 }
 
